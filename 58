@@ -16,3 +16,23 @@ begin
     Print('Конец!');
   end;
 end.
+////////////////////
+uses GraphABC; // 58-г, д.
+var
+  i : integer;  { счетчик цикла      }
+begin
+  SetFontStyle(fsbold);
+  for var j:=1 to 1 do
+  begin
+    Println('Начало:');
+    for i:=1 to 10 do             
+      begin                         
+	      SetFontColor(clrandom); 
+	      //Println();
+	      Println(i,'Халва...');
+	      //Println();
+	      sleep(100)              
+      end;
+    Print('Конец!');
+  end;
+end.
