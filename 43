@@ -1,0 +1,7 @@
+##
+var man := ReadlnInteger('Введите возраст жениха =');
+var woman := ReadlnInteger('Введите возраст невесты =');
+
+if (woman = (((man/2)+7)+0.5)) then Print('Идеальный возраст!')
+  else if (woman > ((man/2)+7)) then Print('Большеватый возраст, хотя, пойдёт...')
+      else if (woman < ((man/2)+7)) then Print('Невеста слишком молода, будьте осторожны!...');
