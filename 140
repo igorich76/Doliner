@@ -23,3 +23,12 @@ for var i:=1 to 7 do
     Println(a[i], '-', a[i] + 7)
   end;
 ///////////////////////
+## //Долинер. Задание 140 в)
+var a: array[1..15] of Integer := (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+a.Println;
+var b := 0;
+for var i:=1 to 5 do
+  begin
+    Writeln((a[i] + b):2, ' - ', (a[i] + b + 1):2, ' - ', (a[i] + b +2):2);
+    b := i+i;
+  end;
