@@ -1,0 +1,29 @@
+// Пример простейшей программы с процедурой
+Uses GraphABC;
+Const N=13;  //количество досок в заборе
+      w=15;  //ширина забора
+      h=75; // высота забора
+var x,y:integer;
+    i:integer;
+Procedure doska(x,y:integer; col1,col2: Color);
+// Процедура рисования доски забора. 
+//Параметры: x,y  - координаты левого нижнего угла доски
+begin
+  SetPenColor(col1);
+  MoveTo(x,y);
+  LineTo(x,y-h);
+  LineTo(x+w,y-h-w);
+  LineTo(x+2*w,y-h);
+  LineTo(x+2*w,y);
+  LineTo(x,y);
+  FloodFill(x+5,y-5,Col2);
+end;
+begin
+  x:=50; y:=100;
+  For i:=1 to N do
+    begin
+      doska(x,y,clRandom,clRandom); // обращение к процедуре рисования доски
+      x:=x+2*w;
+      y:=y+30; // правки здесь!!! для ступенчатого рисования забора!
+    end;
+end.
