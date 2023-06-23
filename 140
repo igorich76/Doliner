@@ -32,3 +32,11 @@ for var i:=1 to 5 do
     Writeln((a[i] + b):2, ' - ', (a[i] + b + 1):2, ' - ', (a[i] + b +2):2);
     b := i+i;
   end;
+//////////////////////
+## //Долинер. Задание 140 г)
+var a: array[1..15] of Integer := (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+a.Println;
+Println;
+for var i:=1 to 15 do if (a[i] mod 2 <> 0) then Print(a[i]);
+Println;
+for var i:=1 to 15 do if (a[i] mod 2 = 0) then Print(a[i]);
