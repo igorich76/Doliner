@@ -1,3 +1,14 @@
+## //Долинер. Задание 140 a)
+var a: array[1..15] of Integer;
+Println('Введите 15 чисел:');
+for var i:=1 to 15 do 
+  begin
+    Print('Число', i,'=');
+    Readln(a[i]);  
+  end;
+a.Println;
+for var i:=1 to 15 do Println(a[i]);
+//////////////////////
 ## //Долинер. Задание 140 б)
 var a: array[1..15] of Integer;
 Println('Введите 15 чисел:');
