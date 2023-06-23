@@ -1,5 +1,15 @@
-##
+## // 44-1
 var a := ReadlnInteger('Введите число 1 =');
 var b := ReadlnInteger('Введите число 2 =');
 var c := ReadlnInteger('Введите число 3 =');
 Print('Большее число =',Max(a,b,c));
+//////////////////
+## // 44-1
+var a := ReadlnInteger('Введите число 1 =');
+var b := ReadlnInteger('Введите число 2 =');
+var c := ReadlnInteger('Введите число 3 =');
+
+if (a>b) and (a>c) then Println('Число', a, 'большее!')
+  else if (b>a) and (b>c) then Println('Число', b, 'большее!')
+    else if (c>a) and (c>b) then Println('Число', c, 'большее!')
+      else if (a=b) or (a=c) or (b=c)  then Println('Некоторые числа равны. Введите числа заново!');
