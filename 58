@@ -1,0 +1,18 @@
+uses GraphABC; // 58-а, б, в.
+var
+  i : integer;  { счетчик цикла      }
+begin
+  SetFontStyle(fsbold);
+  for var j:=1 to 1 do
+  begin
+    Print('Начало:');
+    for i:=1 to 10 do             
+      begin                         
+	      SetFontColor(clrandom); 
+	      
+        Write('Халва...');    
+	      sleep(100)              
+      end;
+    Print('Конец!');
+  end;
+end.
