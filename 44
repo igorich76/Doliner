@@ -1,0 +1,5 @@
+##
+var a := ReadlnInteger('Введите число 1 =');
+var b := ReadlnInteger('Введите число 2 =');
+var c := ReadlnInteger('Введите число 3 =');
+Print('Большее число =',Max(a,b,c));
