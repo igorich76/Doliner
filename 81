@@ -26,5 +26,5 @@ end;
 
 begin
   for var i := 1 to ReadLnInteger('Количество членов ряда Фибоначчи: n =') do
-    Print(fib(v));
+    Print(fib(i));
 end.
