@@ -17,3 +17,14 @@ begin
   for var v := 1 to ReadLnInteger('Количество членов ряда Фибоначчи: n =') do
     Print(fib(v));
 end.
+////////// "распакованный" вариант:
+function fib(number : Integer): Integer;
+begin
+  if (number < 3) then Result := 1 
+    else Result := fib(number - 1) + fib(number - 2);
+end;
+
+begin
+  for var i := 1 to ReadLnInteger('Количество членов ряда Фибоначчи: n =') do
+    Print(fib(v));
+end.
