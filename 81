@@ -1,0 +1,19 @@
+## //Задание 81 а) не совсем эффективное
+var n := ReadlnInteger('Введите длину ряда (n >= 2)');
+var (a, b) := (1, 1);
+Print(a, b);
+if (n >= 3) then
+begin
+loop n-2 do
+  begin
+    (a,b) := (b, a+b);
+    Print(b);
+  end;
+end;
+/////////// подсмотреное, нужно функцию переписать под обычну, не лямбда
+function fib(number : Integer) : Integer := number < 3 ? 1 : fib(number - 1) + fib(number - 2);
+ 
+begin
+  for var v := 1 to ReadLnInteger('Количество членов ряда Фибоначчи: n =') do
+    Print(fib(v));
+end.
