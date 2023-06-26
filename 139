@@ -32,3 +32,22 @@ for var i := 0 to a.Length-1 do
     if (a[i] mod 2 <> 0) then Print(a[i] + '#');     
   end;
 /////////
+// 139 д) вариант 1
+##
+var a := ArrRandom(10,1,50);
+a.Println;
+// решение:
+for var i := 0 to a.Length-1 do a[i] := 3;
+a.Println;
+for var i := 0 to a.High do 
+  if (i mod 3 = 1) then a[i] := 0;
+a.Print;
+////////////
+// 139 д) вариант 2 (ментора вариант)
+##
+var a:= ArrFill(10, 3);
+for var i:= 1 to a.High step 3 do
+  a[i]:= 0;
+
+a.Print;
+////////////
