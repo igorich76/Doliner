@@ -13,7 +13,14 @@ for var i := 0 to a.Length-1 do
 a.Print;
 /////////
 // 139 в)
-
+##
+var a := ArrFill(10,0);
+a.Println;
+for var i := 0 to a.Length-1 do
+  begin
+    if (i mod 2 <> 0) then Print(i);
+    if (i mod 2 = 0) then Print(-i);
+  end;
 /////////
 // 139 г)
 ##
