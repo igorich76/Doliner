@@ -1,0 +1,27 @@
+// 139 а)
+##
+var a := ArrRandom(50,1,100);
+a.Print;
+/////////
+// 139 б)
+##
+var a := new string[3];
+//var a := ReadArrString(3); // можно так
+for var i := 0 to a.Length-1 do
+  a[i] := ReadlnString;
+  //Readln(a[i]); // можно так, но не read!
+a.Print;
+/////////
+// 139 в)
+
+/////////
+// 139 г)
+##
+var a := ReadArrInteger(4);
+a.Println;
+for var i := 0 to a.Length-1 do
+  begin
+    if (a[i] mod 2 = 0) then Print(a[i] + '@');
+    if (a[i] mod 2 <> 0) then Print(a[i] + '#');     
+  end;
+/////////
